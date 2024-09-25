@@ -16,21 +16,31 @@ body {
     color: #fff;
 }
 
+h1, h2 {
+    max-width: 70vw;
+    margin: 0 auto 0.5em auto;
+    color: #fff;
+}
+
 h1 {
     font-size: 1.6em;
     margin-bottom: 0.5em;
     font-weight: 700;
-    color: #fff;
 }
 
 h2 {
     font-size: 1.4em;
     margin-bottom: 0.5em;
     font-weight: 700;
-    color: #fff;
 }
 
-p, img, ul, li, section, figcaption {
+p {
+    font-size: 1.2em;
+    max-width: 70vw;
+    margin: 0 auto 0.5em auto;
+}
+
+img, ul, li, section, figcaption {
     max-width: 70vw;
     margin: 0 auto 0.5em auto;
     font-weight: 400;
@@ -43,32 +53,9 @@ img {
     height: auto;
 }
 
-.foot-container {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start; /* Выровнено по левому краю */
-    margin-top: 20px;
-    color: #fff;
-}
-
-.foot {
-    max-width: 70vw;
-    text-align: left; /* Выровнено по левому краю */
-    padding: 0 10px;
-    word-break: break-word;
-}
-
-@media (max-width: 768px) {
-    body {
-        font-size: 1.1em;
-    }
-
-    img, p, h1, h2, ul, li, section, figcaption {
-        max-width: 90vw;
-    }
-}
 table {
     width: 100%;
+    max-width: 70vw;
     border-collapse: collapse;
     margin-top: 20px;
 }
@@ -82,18 +69,74 @@ td {
 tr:last-child td {
     border-bottom: none;
 }
+
+td:first-child {
+    width: 15%;
+}
+
+td:nth-child(2) {
+    width: 50%;
+}
+
+td:nth-child(3) {
+    width: 35%;
+}
+
+a:link {
+    color:blue
+}
+
+a:visited {
+    color: blueviolet;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 hr {
     width: 70vw;
     border: none;
-    border-top: 1px solid #d3d3d3;
+    border-top: 1px colid #d3d3d3;
     margin-top: 40px;
     color: #fff;
 }
 
+.foot-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.foot {
+    max-width: 70vw;
+    text-align: left; 
+    padding: 0 10px;
+    word-break: break-word;
+}
+
 .footer-text {
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 1.1em;
     color: #fff;
     text-align: left;
 }
 
+@media (max-width: 768px) {
+    body {
+        font-size: 1.1em;
+    }
+
+    img, p, h1, h2, ul, li, section, figcaption {
+        max-width: 90vw;
+    }
+}
+table {
+    max-width: 90vw;
+}
+
+hr {
+    width: 90vw;
+}
