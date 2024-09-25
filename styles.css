@@ -1,59 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+.container {
+    width: 70vw;
+    margin: 0 auto;
+}
+
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    min-height: 100vh;
     margin: 0;
     padding: 20px;
     font-family: 'Inter', sans-serif;
     font-size: 1em;
-    line-height: 1.1;
+    line-height: 1.6;
     background-color: #000;
     color: #fff;
-}
-
-h1, h2 {
-    max-width: 70vw;
-    margin: 0 auto 0.5em auto;
-    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 h1 {
     font-size: 2em;
     font-weight: 700;
+    color: #fff;
+    text-align: center;
 }
 
 h2 {
     font-size: 1.6em;
     font-weight: 700;
+    color: #fff;
 }
 
 p {
     font-size: 1em;
-    font-weight: 400;
-    max-width: 70vw;
-    margin: 0 auto 0.5em auto;
     color: #fff;
-}
-
-img, ul, li, section, figcaption {
-    max-width: 70vw;
-    margin: 0 auto 0.5em auto;
-    font-weight: 400;
-    color: #fff;
+    margin-bottom: 1em;
 }
 
 img {
-    width: 70vw;
+    width: 100%;
     height: auto;
 }
 
 table {
     width: 100%;
-    max-width: 70vw;
     border-collapse: collapse;
     margin-top: 20px;
 }
@@ -62,6 +52,10 @@ td {
     padding: 10px;
     border-bottom: 1px solid #d3d3d3;
     text-align: left;
+}
+
+section {
+    margin-bottom: 60px;
 }
 
 td:first-child {
@@ -81,11 +75,11 @@ tr:last-child td {
 }
 
 a:link {
-    color: rgb(25, 22, 180);
+    color: blue;
 }
 
 a:visited {
-    color: rgb(119, 0, 128);
+    color: blueviolet;
 }
 
 a:hover {
@@ -93,48 +87,25 @@ a:hover {
 }
 
 hr {
-    width: 70vw;
+    width: 100%;
     border: none;
     border-top: 1px solid #d3d3d3;
     margin-top: 40px;
 }
 
-.foot-container {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 20px;
-    color: #fff;
-}
-
-.foot {
-    max-width: 70vw;
-    text-align: left;
-    padding: 0 10px;
-    word-break: break-word;
-}
-
 .footer-text {
     margin-top: 10px;
     font-size: 1em;
+    text-align: center;
     color: #fff;
-    text-align: left;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+    .container {
+        width: 90vw;
+    }
+
     body {
         font-size: 0.9em;
-    }
-
-    img, p, h1, h2, ul, li, section, figcaption {
-        max-width: 90vw;
-    }
-
-    table {
-        max-width: 90vw;
-    }
-
-    hr {
-        width: 90vw;
     }
 }
