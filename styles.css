@@ -9,9 +9,8 @@ body {
     margin: 0;
     padding: 20px;
     font-family: 'Inter', sans-serif;
-    font-size: 1.2em;
-    text-align: left;
-    line-height: 1.3;
+    font-size: 1em;
+    line-height: 1.1;
     background-color: #000;
     color: #fff;
 }
@@ -23,21 +22,21 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 1.6em;
-    margin-bottom: 0.5em;
+    font-size: 2em;
     font-weight: 700;
 }
 
 h2 {
-    font-size: 1.4em;
-    margin-bottom: 0.5em;
+    font-size: 1.6em;
     font-weight: 700;
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1em;
+    font-weight: 400;
     max-width: 70vw;
     margin: 0 auto 0.5em auto;
+    color: #fff;
 }
 
 img, ul, li, section, figcaption {
@@ -45,7 +44,6 @@ img, ul, li, section, figcaption {
     margin: 0 auto 0.5em auto;
     font-weight: 400;
     color: #fff;
-    text-align: left;
 }
 
 img {
@@ -66,10 +64,6 @@ td {
     text-align: left;
 }
 
-tr:last-child td {
-    border-bottom: none;
-}
-
 td:first-child {
     width: 15%;
 }
@@ -82,12 +76,16 @@ td:nth-child(3) {
     width: 35%;
 }
 
+tr:last-child td {
+    border-bottom: none;
+}
+
 a:link {
-    color:blue
+    color: rgb(25, 22, 180);
 }
 
 a:visited {
-    color: blueviolet;
+    color: rgb(119, 0, 128);
 }
 
 a:hover {
@@ -97,9 +95,8 @@ a:hover {
 hr {
     width: 70vw;
     border: none;
-    border-top: 1px colid #d3d3d3;
+    border-top: 1px solid #d3d3d3;
     margin-top: 40px;
-    color: #fff;
 }
 
 .foot-container {
@@ -112,31 +109,32 @@ hr {
 
 .foot {
     max-width: 70vw;
-    text-align: left; 
+    text-align: left;
     padding: 0 10px;
     word-break: break-word;
 }
 
 .footer-text {
-    margin-top: 20px;
-    font-size: 1.1em;
+    margin-top: 10px;
+    font-size: 1em;
     color: #fff;
     text-align: left;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     body {
-        font-size: 1.1em;
+        font-size: 0.9em;
     }
 
     img, p, h1, h2, ul, li, section, figcaption {
         max-width: 90vw;
     }
-}
-table {
-    max-width: 90vw;
-}
 
-hr {
-    width: 90vw;
+    table {
+        max-width: 90vw;
+    }
+
+    hr {
+        width: 90vw;
+    }
 }
