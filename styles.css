@@ -108,6 +108,7 @@ hr {
     }
 }
 
+/* Button */
 .button-container {
     display: flex;
     justify-content: center;
@@ -117,14 +118,14 @@ hr {
 
 a.btn {
     position: relative;
-    padding: 10px 35px; 
+    padding: 15px 35px; 
     color: #fff;
     text-decoration: none;
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-size: 0.75em;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -136,8 +137,8 @@ a.btn::before {
     content: '';
     position: absolute;
     inset: 0 4px;
-    border-left: 2px solid #fff;
-    border-right: 2px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
     transition: 1s;
 }
 
@@ -145,8 +146,8 @@ a.btn::after {
     content: '';
     position: absolute;
     inset: 4px 0;
-    border-top: 2px solid #fff;
-    border-bottom: 2px solid #fff;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
     transition: 1s;
 }
 
