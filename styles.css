@@ -75,9 +75,12 @@ tr:last-child td {
     border-bottom: none;
 }
 
-a:link,
+a:link {
+    color: #fff;
+}
+
 a:visited {
-    color: blue;
+    color: rgb(255, 83, 249);
 }
 
 a:hover {
