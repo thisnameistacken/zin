@@ -50,7 +50,7 @@ table {
 
 td {
     padding: 10px;
-    border-bottom: 1px solid #d3d3d3;
+    border-bottom: 1px solid #7b7b7b;
     text-align: left;
 }
 
@@ -89,7 +89,7 @@ a:hover {
 hr {
     width: 100%;
     border: none;
-    border-top: 1px solid #d3d3d3;
+    border-top: 1px solid #7b7b7b;
     margin-top: 40px;
 }
 
