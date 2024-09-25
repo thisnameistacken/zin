@@ -16,6 +16,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    flex-direction: column;
 }
 
 h1 {
@@ -74,12 +75,9 @@ tr:last-child td {
     border-bottom: none;
 }
 
-a:link {
-    color: blue;
-}
-
+a:link,
 a:visited {
-    color: blueviolet;
+    color: blue;
 }
 
 a:hover {
@@ -110,7 +108,6 @@ hr {
     }
 }
 
-/* Конопка */
 .button-container {
     display: flex;
     justify-content: center;
@@ -120,7 +117,7 @@ hr {
 
 a.btn {
     position: relative;
-    padding: 15px 45px; 
+    padding: 10px 35px; 
     color: #fff;
     text-decoration: none;
     display: inline-block;
@@ -142,10 +139,6 @@ a.btn::before {
     border-left: 2px solid #fff;
     border-right: 2px solid #fff;
     transition: 1s;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
 }
 
 a.btn::after {
@@ -155,10 +148,6 @@ a.btn::after {
     border-top: 2px solid #fff;
     border-bottom: 2px solid #fff;
     transition: 1s;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
 }
 
 a.btn:hover,
