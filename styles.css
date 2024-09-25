@@ -116,8 +116,6 @@ hr {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 a.btn {
@@ -163,8 +161,8 @@ a.btn::after {
     -o-transition: 1s;
 }
 
-a.btn5:hover,
-a.btn5:hover::before,
-a.btn5:hover::after {
+a.btn:hover,
+a.btn:hover::before,
+a.btn:hover::after {
     inset: 0px;
 }
